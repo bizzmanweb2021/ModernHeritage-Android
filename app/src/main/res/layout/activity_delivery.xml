@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/backarrow"/>
+
+        <TextView
+            android:id="@+id/tvDelivery"
+            style="@style/tvRegular"
+            android:text="@string/delivery"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/darkBlue"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_below="@+id/tvDelivery"
+            android:background="@color/yellow"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_20sdp"
+                android:background="@drawable/rectangle_back"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="Name"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@color/greyBackThree"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="@string/address"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@color/greyBackThree"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="@string/shipment_id"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:background="@drawable/rectangle_back"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="Name"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@color/greyBackThree"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="@string/address"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@color/greyBackThree"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="@string/shipment_id"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_20sdp"
+                android:background="@drawable/rectangle_back"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="Name"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@color/greyBackThree"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="@string/address"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@color/greyBackThree"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:text="@string/shipment_id"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#023047</color>
+    <color name="purple_700">#023047</color>
+    <color name="teal_200">#E4C105</color>
+    <color name="teal_700">#E4C105</color>
+    <color name="colorAccent">#023047</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFB703</color>
+    <color name="yellowTwo">#E4C105</color>
+    <color name="darkBlue">#023047</color>
+    <color name="etTextColor">#949494</color>
+    <color name="greyBack">#E1E1E1</color>
+    <color name="textColor">#C0BEBE</color>
+    <color name="greyBackTwo">#EEEDED</color>
+    <color name="greyBackThree">#C4C4C4</color>
+    <color name="darkBlack">#353535</color>
+    <color name="light_gray">#666666</color>
+    <color name="red_color">#FF0000</color>
+    <color name="greyColor">#747474</color>
+    <color name="light_purple">#F0EBEB</color>
+    <color name="blue_color">#0042EB</color>
+    <color name="dark_grey_color">#524F4F</color>
+    <color name="dark_grey_two">#3F3F3F</color>
+    <color name="dark_grey_three">#898989</color>
+    <color name="light_pink">#FBF3F3</color>
+    <color name="light_grey_four">#EEEEE4</color>
+    <color name="light_grey_five">#757272</color>
+</resources>

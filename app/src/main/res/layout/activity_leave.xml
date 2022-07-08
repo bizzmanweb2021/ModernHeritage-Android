@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/backarrow"/>
+
+        <TextView
+            android:id="@+id/tvDelivery"
+            style="@style/tvRegular"
+            android:text="Leave"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/darkBlue"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_below="@+id/tvDelivery"
+            android:background="@color/yellow"/>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:src="@drawable/profile_image"/>
+
+    <TextView
+        android:id="@+id/profileName"
+        style="@style/tvSemiBold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:textColor="@color/darkBlue"
+        android:text="@string/patrick_gomes_5_20"/>
+
+    <LinearLayout
+        android:id="@+id/tabSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/butLeaveBal"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/customButton"
+            android:text="Leave Balance"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:background="@drawable/round_rectangle"/>
+
+        <TextView
+            android:id="@+id/butLeaveCal"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/customButton"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Leave Calender"
+            android:textColor="@color/dark_grey_two"
+            android:gravity="center"
+            android:backgroundTint="@color/light_grey_four"
+            android:background="@drawable/round_rectangle"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

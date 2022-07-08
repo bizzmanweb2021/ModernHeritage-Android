@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/tvProfile"
+            style="@style/tvRegular"
+            android:layout_centerHorizontal="true"
+            android:text="@string/commision"
+            android:textColor="@color/darkBlue"
+            android:textSize="@dimen/_14sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_below="@+id/tvProfile"
+            android:background="@color/yellow"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/profile_img" />
+
+                <TextView
+                    android:id="@+id/profileName"
+                    style="@style/tvSemiBold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/profilePic"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:textColor="@color/darkBlue"
+                    android:text="Patrick Gomes"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleCommision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                tools:listitem="@layout/items_commision"
+                android:layout_marginVertical="@dimen/_12sdp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:paddingHorizontal="@dimen/_18sdp">
+
+                <TextView
+                    style="@style/tvBold"
+                    android:text="$ 125"
+                    android:textColor="@color/darkBlue"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textSize="@dimen/_18sdp" />
+
+
+                <TextView
+                    android:id="@+id/butContinue"
+                    style="@style/customButton"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/round_rectangle"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    app:tint="@color/white"
+                    android:rotation="180"
+                    android:layout_centerVertical="true"
+                    android:layout_alignEnd="@+id/butContinue"
+                    android:layout_alignStart="@+id/butContinue"
+                    android:src="@drawable/backarrow"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

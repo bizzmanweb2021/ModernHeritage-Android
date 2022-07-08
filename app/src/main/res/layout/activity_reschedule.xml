@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/backarrow"/>
+
+        <TextView
+            android:id="@+id/tvReschedule"
+            style="@style/tvRegular"
+            android:text="@string/reschedule"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/darkBlue"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/tvReschedule"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:background="@color/yellow" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleCalender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/items_cal"
+                android:layout_marginVertical="@dimen/_10sdp"/>
+
+
+            <TextView
+                android:id="@+id/tvHead"
+                style="@style/tvRegular"
+                android:text="@string/your_availability_on_that_day"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleReschedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                android:orientation="horizontal"
+                tools:listitem="@layout/items_reschdule"
+                android:layout_marginVertical="@dimen/_10sdp"/>
+
+            <TextView
+                style="@style/tvRegular"
+                android:text="@string/please_tell_us_the_reason"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="@dimen/_10sdp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:buttonTint="@color/greyBackThree"
+                    android:button="@drawable/custom_radio_selector"
+                    android:text="@string/not_available_in_at_given_time"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:buttonTint="@color/greyBackThree"
+                    android:button="@drawable/custom_radio_selector"
+                    android:text="@string/not_available_in_at_given_location"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:buttonTint="@color/greyBackThree"
+                    android:button="@drawable/custom_radio_selector"
+                    android:text="@string/device_not_available_hot_ready"/>
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/rectangle_back">
+
+                <EditText
+                    style="@style/customEditText"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="I am reschedule because..."
+                    android:paddingHorizontal="@dimen/_14sdp"
+                    android:textColor="@color/dark_grey_two"
+                    android:textColorHint="@color/dark_grey_two"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/butGetStart"
+                android:layout_width="@dimen/_120sdp"
+                style="@style/customButton"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/round_rectangle"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/toolbarSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:background="@drawable/rectangle_back"
+        android:layout_marginVertical="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/tvSearch"
+            style="@style/tvRegular"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:hint="@string/search"
+            android:textColor="@color/textColor"/>
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:src="@drawable/search"/>
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSec"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/profileSec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/profileman"/>
+
+                            <TextView
+                                style="@style/tvSemiBold"
+                                android:text="@string/profile"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/darkBlue"/>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pickUpSec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="@dimen/_18sdp"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/profileman"/>
+
+                            <TextView
+                                style="@style/tvSemiBold"
+                                android:text="@string/pick_up"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/darkBlue"/>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/deliverySec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/profileman"/>
+
+                            <TextView
+                                style="@style/tvSemiBold"
+                                android:text="@string/delivery"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/darkBlue"/>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/attendanceSec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="@dimen/_18sdp"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/profileman"/>
+
+                            <TextView
+                                style="@style/tvSemiBold"
+                                android:text="@string/attendance"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/darkBlue"/>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/deliverHistorySec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/deliveryhistory"/>
+
+                            <TextView
+                                style="@style/tvSemiBold"
+                                android:text="@string/delivery_history"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/darkBlue"/>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vehicleSec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="@dimen/_18sdp"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/profileman"/>
+
+                            <TextView
+                                style="@style/tvSemiBold"
+                                android:text="@string/vehicle"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/darkBlue"/>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/rectangle_back"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_height="@dimen/_100sdp">
+
+
+                    <LinearLayout
+                        android:id="@+id/commisionSec"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingVertical="@dimen/_18sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/profileman"/>
+
+                        <TextView
+                            style="@style/tvSemiBold"
+                            android:text="@string/commision"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/darkBlue"/>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

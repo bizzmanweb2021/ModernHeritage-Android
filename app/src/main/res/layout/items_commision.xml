@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_12sdp"
+    android:background="@drawable/rectangle_back">
+
+        <ImageView
+            android:id="@+id/arrowImg"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@drawable/circle_gray"
+            android:padding="@dimen/_1sdp"
+            android:src="@drawable/tringle_img" />
+
+        <TextView
+            android:id="@+id/tvHead"
+            style="@style/tvRegular"
+            android:layout_toEndOf="@+id/arrowImg"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:text="Shipment Id"
+            android:textColor="@color/darkBlue"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            style="@style/tvRegular"
+            android:textSize="@dimen/_9sdp"
+            android:text="20.10.2021"
+            android:layout_below="@+id/tvHead"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/arrowImg"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:textColor="@color/light_gray"/>
+
+        <TextView
+            style="@style/tvRegular"
+            android:textSize="@dimen/_14sdp"
+            android:text="$ 2.50"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:textColor="@color/red_color"/>
+
+
+</RelativeLayout>

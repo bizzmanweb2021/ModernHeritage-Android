@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/calenderimg"/>
+
+    <TextView
+        android:id="@+id/tvHead"
+        style="@style/tvRegular"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:text="No Leave For Today"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

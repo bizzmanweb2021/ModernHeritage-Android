@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/toolbarSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tvRegular"
+            android:text="@string/sign_in"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/darkBlue"/>
+
+        <View
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/yellow"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSec">
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/customEditText"
+            android:textSize="@dimen/_12sdp"
+            android:backgroundTint="@color/darkBlue"
+            android:drawableStart="@drawable/email"
+            android:textColor="@color/etTextColor"
+            android:text="User Id"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/customEditText"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
+            android:backgroundTint="@color/darkBlue"
+            android:drawableStart="@drawable/password"
+            android:textColor="@color/etTextColor"
+            android:text="Password"/>
+
+        <TextView
+            android:id="@+id/butSignIn"
+            android:layout_width="@dimen/_170sdp"
+            style="@style/customButton"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_22sdp"
+            android:background="@drawable/round_rectangle"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

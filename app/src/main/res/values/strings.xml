@@ -1,0 +1,52 @@
+<resources>
+    <string name="google_maps_key">AIzaSyCq3i0ShvIUmmf1o-esFrK0aeQ2DFapaCo</string>
+    <string name="app_name">ModernHeritageApp</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in">Sign In</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="pick_up">Pick up</string>
+    <string name="delivery">Delivery</string>
+    <string name="attendance">Attendance</string>
+    <string name="delivery_history">Delivery History</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="address">Address</string>
+    <string name="shipment_id">Shipment Id</string>
+    <string name="commision">Commision</string>
+    <string name="details">Details</string>
+    <string name="shipping_id">Shipping Id</string>
+    <string name="name">Name</string>
+    <string name="expected_delivery_date">Expected delivery date</string>
+    <string name="deliver">Deliver</string>
+    <string name="call">Call</string>
+    <string name="location">Location</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="cancel">Cancel</string>
+    <string name="view_details">View Details</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="service_history">Service History</string>
+    <string name="your_order">Your Order</string>
+    <string name="your_wishlist">Your Wishlist</string>
+    <string name="setting">Setting</string>
+    <string name="log_out">Log Out</string>
+    <string name="order_details">Order Details</string>
+    <string name="reason_for_cancellation">Reason for Cancellation</string>
+    <string name="comments_optional">Comments (Optional)</string>
+    <string name="description">"There will be no refund as the orders Purchased usinig  cash on delivery  "</string>
+    <string name="cancellation_confirmed">Cancellation Confirmed</string>
+    <string name="check_status">Check Status</string>
+    <string name="keep_shopping">Keep Shopping</string>
+    <string name="refund_status">Refund Status</string>
+    <string name="refund_description">"There will be no refund as the orders Purchased usinig  cash on delivery  "</string>
+    <string name="view_all_orders">View all orders</string>
+    <string name="your_availability_on_that_day">Your availability on that day</string>
+    <string name="please_tell_us_the_reason">Please tell us the reason</string>
+    <string name="not_available_in_at_given_time">Not available in at given time</string>
+    <string name="not_available_in_at_given_location">Not available in at given location</string>
+    <string name="device_not_available_hot_ready">Device not available /hot ready</string>
+    <string name="submit">Submit</string>
+    <string name="patrick_gomes_5_20">Patrick Gomes <font color="#000">(5/20)</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="annual_leave">Annual Leave</string>
+</resources>

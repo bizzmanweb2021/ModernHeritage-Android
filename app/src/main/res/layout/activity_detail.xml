@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/tvDetails"
+            style="@style/tvRegular"
+            android:layout_centerHorizontal="true"
+            android:text="@string/details"
+            android:textColor="@color/darkBlue"
+            android:textSize="@dimen/_14sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_below="@+id/tvDetails"
+            android:background="@color/yellow"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/shipping_id"
+                    android:textColor="@color/darkBlack"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="15349kjb"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/darkBlack"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_15sdp">
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/name"
+                    android:textColor="@color/darkBlack"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Patrick Gomes"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/darkBlack"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/address"
+                    android:textColor="@color/darkBlack"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="139 Ceylon Rd, Level 1 Eurasian Community House, Singapore 429744"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_below="@+id/tvAddress"
+                    android:textColor="@color/darkBlack"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_15sdp">
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/expected_delivery_date"
+                    android:textColor="@color/darkBlack"/>
+
+                <TextView
+                    style="@style/tvRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="11.10.2022"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableStart="@drawable/calendar_new"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/darkBlack"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/profileSec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                    <LinearLayout
+                        android:id="@+id/dashboardSec"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delivery"/>
+
+                        <TextView
+                            style="@style/tvSemiBold"
+                            android:text="@string/deliver"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/darkBlue"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingVertical="@dimen/_18sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/call"/>
+
+                        <TextView
+                            style="@style/tvSemiBold"
+                            android:text="@string/call"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/darkBlue"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                    <LinearLayout
+                        android:id="@+id/locationSec"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/location"/>
+
+                        <TextView
+                            style="@style/tvSemiBold"
+                            android:text="@string/location"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/darkBlue"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_back"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_height="@dimen/_100sdp">
+
+                    <LinearLayout
+                         android:id="@+id/rescheduleSec"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingVertical="@dimen/_18sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/reschedule"/>
+
+                        <TextView
+                            style="@style/tvSemiBold"
+                            android:text="@string/reschedule"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/darkBlue"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/tvCancel"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingVertical="@dimen/_12sdp"
+             android:layout_marginVertical="@dimen/_12sdp"
+             android:background="@drawable/rectangle_back"
+             android:gravity="center">
+             <TextView
+                 style="@style/tvSemiBold"
+                 android:gravity="center"
+                 android:textSize="@dimen/_11sdp"
+                 android:textColor="@color/darkBlue"
+                 android:text="@string/cancel"/>
+         </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
