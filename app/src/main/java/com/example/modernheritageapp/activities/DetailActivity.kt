@@ -6,7 +6,6 @@ import android.os.Bundle
 import com.example.modernheritageapp.R
 import kotlinx.android.synthetic.main.activity_detail.*
 
-
 class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
